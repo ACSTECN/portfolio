@@ -805,129 +805,31 @@ nav button.active {
   border-color: #00e5ff;
   box-shadow: 0 0 30px rgba(0, 229, 255, 0.25);
 }
-/* ===============================
-   MOBILE RESPONSIVO
-================================ */
+/* BOTÃO TOGGLE SIDEBAR */
+.sidebar-toggle {
+  display: none;
+  background: rgba(0,255,255,0.12);
+  border: 1px solid rgba(0,255,255,0.4);
+  color: #00e5ff;
+  font-size: 22px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* MOBILE */
 @media (max-width: 900px) {
 
-  body {
-    overflow: auto;
+  .sidebar-toggle {
+    display: block;
   }
 
-  /* SIDEBAR → TOPO */
   .sidebar {
-    width: 100%;
-    height: auto;
-    position: fixed;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 16px;
-    z-index: 1000;
+    transform: translateY(0);
+    transition: transform 0.35s ease;
   }
 
-  .sidebar-top {
-    flex-direction: row;
-    gap: 14px;
+  .sidebar.hidden {
+    transform: translateY(-100%);
   }
-
-  .profile p,
-  .sidebar-footer {
-    display: none;
-  }
-
-  nav {
-    flex-direction: row;
-    gap: 6px;
-  }
-
-  nav button {
-    font-size: 13px;
-    padding: 8px 10px;
-  }
-
-  /* CONTEÚDO */
-  .content {
-    margin-left: 0;
-    width: 100%;
-    height: auto;
-    padding-top: 90px;
-  }
-
-  .section {
-    position: relative;
-    inset: auto;
-    padding: 40px 18px;
-    transform: none;
-  }
-
-  /* HERO */
-  .hero h1 {
-    font-size: 34px;
-    text-align: center;
-  }
-
-  .hero h2 {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  .hero p {
-    font-size: 14px;
-    text-align: center;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .hero-buttons .btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  /* GRID PADRÃO → 1 COLUNA */
-  .experience-grid,
-  .skills-grid,
-  .projects-grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  /* PROJETOS */
-  .project-card {
-    padding: 18px;
-  }
-
-  .project-card h3 {
-    font-size: 16px;
-  }
-
-  .project-card p {
-    font-size: 14px;
-  }
-
-  /* CARROSSEL */
-  .carousel-btn {
-    font-size: 18px;
-    padding: 6px 10px;
-  }
-
-  /* MODAL */
-  .project-modal-content {
-    width: 95%;
-    max-height: 90vh;
-    padding: 20px;
-  }
-
-  .project-modal-body h2 {
-    font-size: 20px;
-  }
-
-  .project-modal-body p,
-  .project-modal-body li {
-    font-size: 14px;
-  }
-
 }
