@@ -533,10 +533,6 @@ document.addEventListener("click", (e) => {
 });
 function toggleSidebar() {
   const sidebar = document.querySelector('.sidebar');
-  sidebar.classList.toggle('hidden');
-}
-function toggleSidebar() {
-  const sidebar = document.querySelector('.sidebar');
   const body = document.body;
 
   sidebar.classList.toggle('hidden');
