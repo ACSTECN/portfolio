@@ -1687,3 +1687,20 @@ nav button.active {
   }
 
 }
+/* SIDEBAR ESCONDIDA */
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+
+/* CONTEÚDO NORMAL */
+.content {
+  margin-left: 260px;
+  width: calc(100vw - 260px);
+  transition: all 0.35s ease;
+}
+
+/* CONTEÚDO TELA CHEIA */
+body.sidebar-hidden .content {
+  margin-left: 0;
+  width: 100vw;
+}
