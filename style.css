@@ -1704,3 +1704,39 @@ body.sidebar-hidden .content {
   margin-left: 0;
   width: 100vw;
 }
+/* BOTÃO FLUTUANTE PARA ABRIR SIDEBAR */
+.sidebar-toggle-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+
+  background: rgba(0, 229, 255, 0.15);
+  border: 1px solid rgba(0, 229, 255, 0.4);
+  color: #00e5ff;
+
+  font-size: 22px;
+  cursor: pointer;
+
+  display: none; /* começa escondido */
+  align-items: center;
+  justify-content: center;
+
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+}
+
+.sidebar-toggle-btn:hover {
+  background: rgba(0, 229, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.5);
+  transform: scale(1.05);
+}
+
+/* MOSTRA BOTÃO QUANDO SIDEBAR ESTÁ ESCONDIDA */
+body.sidebar-hidden .sidebar-toggle-btn {
+  display: flex;
+}
