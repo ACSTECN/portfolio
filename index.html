@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+<!-- MODAL DE IMAGEM -->
+<div id="imageModal" class="image-modal">
+    <span class="close-modal">&times;</span>
+    <img id="modalImage" />
+  </div>
+  
+<body>
+
+  <!-- FUNDO -->
+  <div class="background-grid"></div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="lang-theme">
+        <select>
+          <option>BR · PT</option>
+        </select>
+        <button class="theme-btn">☀</button>
+      </div>
+
+      <div class="profile">
+        <h2>Alessandro Christos Simonis</h2>
+        <span>Analista de Dados</span>
+        <p>Especialista em transformar dados em insights estratégicos.</p>
+      </div>
+
+      <nav>
+        <button class="active" onclick="showSection('inicio')">🏠 Início</button>
+        <button onclick="showSection('sobre')">👤 Sobre</button>
+        <button onclick="showSection('experiencia')">🕒 Experiência</button>
+        <button onclick="showSection('habilidades')">📊 Habilidades</button>
+        <button onclick="showSection('projetos')">📁 Projetos</button>
+        <button onclick="showSection('contato')">✉ Contato</button>
+      </nav>
+    </div>
+
+    <div class="sidebar-footer">
+      <span>© 2026</span>
+    </div>
+  </aside>
+
+  <!-- CONTEÚDO -->
+  <main class="content">
+
+    <!-- INÍCIO -->
+    <section id="inicio" class="section active hero">
+      <h4>Olá, eu sou</h4>
+      <h1>Alessandro Christos</h1>
+      <h2>
+        <span id="typing-text"></span><span class="cursor">|</span>
+      </h2>
+      
+
+      <p>
+        Especialista em automação de processos, análise de dados orientada a código
+        e desenvolvimento de soluções com Python. Experiência sólida em MongoDB,
+        SQL, Power BI e integração de APIs.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn primary" onclick="showSection('projetos')">
+          Explorar Projetos
+        </a>
+      
+        <a
+          class="btn secondary"
+          href="https://drive.google.com/file/d/18In9dcUgL0CYSwW_tixSV3tuXjOmbWBC/view?usp=drive_link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Baixar CV
+        </a>
+      </div>
+      
+    </section>
+    <section id="sobre" class="section">
+        <div class="about-container">
+      
+          <h1>Sobre mim</h1>
+      
+          <p>
+            Sou <strong>Alessandro Christos Simonis</strong>, profissional de Tecnologia da Informação com 24 anos,
+            especializado em <strong>Business Intelligence</strong>, <strong>análise de dados</strong>,
+            <strong>automação de processos</strong> e <strong>desenvolvimento web</strong>.
+            Sou graduado em <strong>Análise e Desenvolvimento de Sistemas</strong> pela
+            <strong>Universidade Cruzeiro do Sul</strong> e atualmente curso
+            <strong>Ciência de Dados</strong> pela <strong>UniEnsino</strong>,
+            ampliando ainda mais minha base técnica e analítica.
+          </p>
+      
+          <p>
+            Atuo hoje como <strong>Control Desk Pleno III</strong> na <strong>Konecta</strong>, sendo responsável
+            pelo monitoramento em tempo real das operações, criação de dashboards estratégicos
+            e automação de relatórios operacionais. Meu foco está em melhorar a eficiência
+            dos fluxos, reduzir retrabalhos e apoiar a tomada de decisão por meio de dados.
+          </p>
+      
+          <p>
+            Na minha última experiência, fui <strong>Especialista de BI</strong> na
+            <strong>KAINOS & CO</strong>, onde transformava dados consumidos via API em
+            insights estratégicos, criando automações que elevaram a performance operacional
+            e otimizaram processos internos.
+          </p>
+      
+          <p>
+            Além da experiência corporativa, tenho como diferencial o desenvolvimento de
+            <strong>soluções próprias</strong>, criadas de forma independente, unindo
+            conhecimento técnico à visão prática do dia a dia:
+          </p>
+      
+        </div>
+        <div class="timeline-wrapper">
+
+            <h2 class="timeline-title">Minha Jornada</h2>
+          
+            <div class="timeline">
+          
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-year">2016</span>
+          
+                <div class="timeline-card">
+                  <h3>Consultor de atendimento</h3>
+                  <span class="company">Headset Brasil</span>
+                  <p>
+                    Atendente Receptivo e Ativo
+                  </p>
+                </div>
+              </div>
+          
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-year">2023</span>
+          
+                <div class="timeline-card">
+                  <h3>Supervisor Operacional</h3>
+                  <span class="company">Headset Brasil</span>
+                  <p>
+                    Supervisor de 3 celulas em outbound e Inbound, celulas SAC, Ativo cobrança, Negativados e Cheklist do contrato.
+                  </p>
+                </div>
+              </div>
+          
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-year">2024</span>
+          
+                <div class="timeline-card">
+                  <h3>Supervisor de Projetos</h3>
+                  <span class="company">Daha out+tech</span>
+                  <p>
+                    Principal ponta de todos os projetos da Empresa, tanto da parte de contratação até depois da entrega do Projeto, principal responsavel pelo setor.
+                  </p>
+                </div>
+              </div>
+          
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-year">2024</span>
+          
+                <div class="timeline-card">
+                  <h3>Especialista de Bi</h3>
+                  <span class="company">Kainos&co</span>
+                  <p>
+                    Automação de processos, análise de dados com Python, Node e JS,
+                    integração de APIs e dashboards e estrutura de dados em Banco de dados
+                  </p>
+                </div>
+              </div>
+          
+              <div class="timeline-item active">
+                <div class="timeline-dot"></div>
+                <span class="timeline-year highlight">2025</span>
+          
+                <div class="timeline-card highlight">
+                  <h3>Control Desk Senior</h3>
+                  <span class="company">Konecta</span>
+                  <p>
+                    Automação de processos, análise de dados com Python,
+                    integração de APIs e dashboards e análise em tempo real
+                  </p>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+          
+      </section>
+      
+      <section id="experiencia" class="section">
+
+        <div class="experience-wrapper">
+          <h1 class="experience-title">Experiência Profissional</h1>
+          <p class="experience-subtitle">
+            Minha trajetória profissional, do início até a posição atual.
+          </p>
+      
+          <div class="experience-grid">
+      
+            <!-- ATUAL -->
+            <div class="experience-card active">
+              <span class="date">Fev 2025 — Presente</span>
+              <h3>Control Desk Sênior</h3>
+              <span class="company">Konecta</span>
+              <p>
+                Monitoramento em tempo real das operações, criação de dashboards estratégicos
+                e automação de relatórios operacionais.
+              </p>
+              <div class="tags">
+                <span>Power BI</span>
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Automação</span>
+              </div>
+            </div>
+      
+            <div class="experience-card">
+              <span class="date">Abr 2024 — Dez 2024</span>
+              <h3>Especialista de BI</h3>
+              <span class="company">KAINOS & CO</span>
+              <p>
+                Transformação de dados via API em insights estratégicos e automações.
+              </p>
+              <div class="tags">
+                <span>Python</span>
+                <span>APIs</span>
+                <span>SQl server</span>
+                <span>Postman</span>
+                <span>Node</span>
+                <span>JS</span>
+              </div>
+            </div>
+      
+            <div class="experience-card">
+              <span class="date">Jul 2023 — Mai 2024</span>
+              <h3>Supervisor de Projetos</h3>
+              <span class="company">DAHA Out+Tech</span>
+              <p>
+                Gestão de projetos, coordenação de equipes e entregas técnicas.
+              </p>
+              <div class="tags">
+                <span>Gestão</span>
+                <span>Projetos</span>
+                <span>Liderança</span>
+              </div>
+            </div>
+      
+            <div class="experience-card">
+              <span class="date">Jan 2018 — Out 2021</span>
+              <h3>Consultor de Atendimento</h3>
+              <span class="company">HeadSet Brasil</span>
+              <p>
+                Atendimento ao cliente e suporte direto ao usuário.
+              </p>
+              <div class="tags">
+                <span>Atendimento</span>
+                <span>Suporte</span>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      
+      </section>
+      
+      
+
+      <section id="habilidades" class="section">
+
+        <div class="skills-wrapper">
+      
+          <h1 class="skills-title">Habilidades Técnicas</h1>
+          <p class="skills-subtitle">
+            Competências desenvolvidas ao longo da minha trajetória em tecnologia,
+            com foco em dados, automação e desenvolvimento.
+          </p>
+      
+          <!-- FILTROS -->
+          <div class="skills-filters">
+            <button class="filter active" data-filter="dev">Desenvolvimento</button>
+            <button class="filter" data-filter="automation">Automação & Bots</button>
+            <button class="filter" data-filter="db">Banco de Dados</button>
+            <button class="filter" data-filter="tools">Ferramentas</button>
+          </div>
+      
+          <!-- GRID -->
+          <div class="skills-grid">
+      
+            <!-- DESENVOLVIMENTO -->
+            <div class="skill-card" data-category="dev">
+              <span>Python</span>
+              <div class="bar">
+                <div style="width:92%"></div>
+              </div>
+              <small>90%</small>
+            </div>
+            <div class="skill-card" data-category="dev">
+                <span>Lua</span>
+                <div class="bar">
+                  <div style="width:92%"></div>
+                </div>
+                <small>90%</small>
+              </div>
+              <div class="skill-card" data-category="dev">
+                <span>vue2</span>
+                <div class="bar">
+                  <div style="width:92%"></div>
+                </div>
+                <small>50%</small>
+              </div>
+              <div class="skill-card" data-category="dev">
+                <span>React</span>
+                <div class="bar">
+                  <div style="width:92%"></div>
+                </div>
+                <small>50%</small>
+              </div>
+
+      
+            <div class="skill-card" data-category="dev">
+              <span>JavaScript</span>
+              <div class="bar">
+                <div style="width:90%"></div>
+              </div>
+              <small>90%</small>
+            </div>
+      
+            <div class="skill-card" data-category="dev">
+              <span>TypeScript</span>
+              <div class="bar">
+                <div style="width:88%"></div>
+              </div>
+              <small>80%</small>
+            </div>
+            <div class="skill-card" data-category="dev">
+                <span>Node</span>
+                <div class="bar">
+                  <div style="width:88%"></div>
+                </div>
+                <small>90%</small>
+              </div>
+      
+            <!-- AUTOMAÇÃO -->
+            <div class="skill-card" data-category="automation">
+              <span>APIs & Integrações PYTHON</span>
+              <div class="bar">
+                <div style="width:90%"></div>
+              </div>
+              <small>90%</small>
+            </div>
+            <div class="skill-card" data-category="automation">
+                <span>Consultas Postman </span>
+                <div class="bar">
+                  <div style="width:90%"></div>
+                </div>
+                <small>90%</small>
+              </div>
+
+                
+              
+              <div class="skill-card" data-category="automation">
+                <span>N8N </span>
+                <div class="bar">
+                  <div style="width:90%"></div>
+                </div>
+                <small>40%</small>
+              </div>
+              <div class="skill-card" data-category="automation">
+                <span>VBA MACRO </span>
+                <div class="bar">
+                  <div style="width:90%"></div>
+                </div>
+                <small>95%</small>
+              </div>
+              <div class="skill-card" data-category="automation">
+                <span>Discord </span>
+                <div class="bar">
+                  <div style="width:90%"></div>
+                </div>
+                <small>95%</small>
+              </div>
+              <div class="skill-card" data-category="automation">
+                <span>Telegram </span>
+                <div class="bar">
+                  <div style="width:90%"></div>
+                </div>
+                <small>95%</small>
+              </div>
+              <div class="skill-card" data-category="automation">
+                <span>Edge driver/Chrome driver </span>
+                <div class="bar">
+                  <div style="width:90%"></div>
+                </div>
+                <small>95%</small>
+              </div>
+              <div class="skill-card" data-category="automation">
+                <span>POWER AUTOMATE </span>
+                <div class="bar">
+                  <div style="width:90%"></div>
+                </div>
+                <small>40%</small>
+              </div>
+            <div class="skill-card" data-category="automation">
+              <span>Web Scraping</span>
+              <div class="bar">
+                <div style="width:85%"></div>
+              </div>
+              <small>85%</small>
+            </div>
+      
+            <!-- BANCO DE DADOS -->
+            <div class="skill-card" data-category="db">
+              <span>SQL Server</span>
+              <div class="bar">
+                <div style="width:88%"></div>
+              </div>
+              <small>95%</small>
+            </div>
+      
+            <div class="skill-card" data-category="db">
+              <span>MongoDB</span>
+              <div class="bar">
+                <div style="width:82%"></div>
+              </div>
+              <small>90%</small>
+            </div>
+      
+            <!-- FERRAMENTAS -->
+            <div class="skill-card" data-category="tools">
+              <span>Power BI</span>
+              <div class="bar">
+                <div style="width:90%"></div>
+              </div>
+              <small>90%</small>
+            </div>
+            <div class="skill-card" data-category="tools">
+                <span>Tableau</span>
+                <div class="bar">
+                  <div style="width:90%"></div>
+                </div>
+                <small>50%</small>
+              </div>
+              <div class="skill-card" data-category="tools">
+                <span>Excel</span>
+                <div class="bar">
+                  <div style="width:90%"></div>
+                </div>
+                <small>90%</small>
+              </div>
+            <div class="skill-card" data-category="tools">
+              <span>Git / GitHub</span>
+              <div class="bar">
+                <div style="width:85%"></div>
+              </div>
+              <small>90%</small>
+            </div>
+            <div class="skill-card" data-category="tools">
+                <span>Grafana</span>
+                <div class="bar">
+                  <div style="width:85%"></div>
+                </div>
+                <small>50%</small>
+              </div>
+      
+          </div>
+        </div>
+      
+      </section>
+      
+      <section id="projetos" class="section scroll">
+
+        <div class="projects-wrapper">
+          <h1 class="projects-title">Projetos</h1>
+          <p class="projects-subtitle">
+            Projetos desenvolvidos com foco em dados, automação e eficiência operacional.
+          </p>
+      
+          <div class="projects-grid">
+      
+            <!-- ================= SPEECH ANALYTICS ================= -->
+            <div class="project-card">
+              <h3>Speech Analytics</h3>
+      
+              <div class="carousel">
+                <button class="carousel-btn left" onclick="prevSlide(this)">‹</button>
+                <div class="carousel-track">
+                  <img src="imgs/SPEECH1.png" onclick="openImage(this)">
+                  <img src="imgs/SPEECH2.png" onclick="openImage(this)">
+                  <img src="imgs/SPEECH3.png" onclick="openImage(this)">
+                  <img src="imgs/SPEECH4.png" onclick="openImage(this)">
+                  <img src="imgs/SPEECH5.png" onclick="openImage(this)">
+                  <img src="imgs/SPEECH6.png" onclick="openImage(this)">
+                  <img src="imgs/SPEECH7.png" onclick="openImage(this)">
+                </div>
+                <button class="carousel-btn right" onclick="nextSlide(this)">›</button>
+              </div>
+      
+              <p class="project-summary">
+                Plataforma de Speech Analytics com IA para transcrição, análise de sentimentos
+                e exploração inteligente de conversas.
+              </p>
+      
+              <button class="details-btn"
+                onclick="openProjectDetails('speech')">
+                Ver detalhes →
+              </button>
+            </div>
+      
+            <!-- ================= ACS PONTO ================= -->
+            <div class="project-card">
+              <h3>ACS Ponto</h3>
+      
+              <div class="carousel">
+                <button class="carousel-btn left" onclick="prevSlide(this)">‹</button>
+                <div class="carousel-track">
+                  <img src="imgs/1.png" onclick="openImage(this)">
+                  <img src="imgs/2.png" onclick="openImage(this)">
+                  <img src="imgs/3.png" onclick="openImage(this)">
+                  <img src="imgs/4.png" onclick="openImage(this)">
+                  <img src="imgs/5.png" onclick="openImage(this)">
+                  <img src="imgs/6.png" onclick="openImage(this)">
+                  <img src="imgs/7.png" onclick="openImage(this)">
+                  <img src="imgs/8.png" onclick="openImage(this)">
+                  <img src="imgs/9.png" onclick="openImage(this)">
+                  <img src="imgs/10.png" onclick="openImage(this)">
+                </div>
+                <button class="carousel-btn right" onclick="nextSlide(this)">›</button>
+              </div>
+      
+              <p class="project-summary">
+                Sistema completo de gestão de ponto eletrônico com perfis segmentados
+                e foco em simplicidade operacional.
+              </p>
+      
+              <button class="details-btn"
+                onclick="openProjectDetails('acs')">
+                Ver detalhes →
+              </button>
+            </div>
+      
+            <!-- ================= FORECAST VIVO ================= -->
+            <div class="project-card">
+              <h3>Relatório Tempo Real + Forecast (VIVO)</h3>
+      
+              <div class="carousel">
+                <button class="carousel-btn left" onclick="prevSlide(this)">‹</button>
+                <div class="carousel-track">
+                  <img src="imgs/HORANOC.png" onclick="openImage(this)">
+                </div>
+                <button class="carousel-btn right" onclick="nextSlide(this)">›</button>
+              </div>
+      
+              <p class="project-summary">
+                Automação ponta a ponta para geração de relatórios e forecast em tempo real,
+                integrando sistemas e Excel.
+              </p>
+      
+              <button class="details-btn"
+                onclick="openProjectDetails('forecast')">
+                Ver detalhes →
+              </button>
+            </div>
+      
+            <!-- ================= BOT DISCORD + FIVEM ================= -->
+            <div class="project-card">
+              <h3>Bot Discord + FiveM</h3>
+      
+              <div class="carousel">
+                <button class="carousel-btn left" onclick="prevSlide(this)">‹</button>
+                <div class="carousel-track">
+                  <img src="imgs/bootunic.png" onclick="openImage(this)">
+                  <img src="imgs/bootunic2.png" onclick="openImage(this)">
+                </div>
+                <button class="carousel-btn right" onclick="nextSlide(this)">›</button>
+              </div>
+      
+              <p class="project-summary">
+                Bot em Node.js para monitoramento em tempo real de servidores FiveM
+                integrado ao Discord.
+              </p>
+      
+              <button class="details-btn"
+                onclick="openProjectDetails('bot')">
+                Ver detalhes →
+              </button>
+            </div>
+      
+            <!-- ================= PAUSAS OPERACIONAL ================= -->
+            <div class="project-card">
+              <h3>Relatório Operacional de Pausas (VIVO)</h3>
+      
+              <div class="carousel">
+                <button class="carousel-btn left" onclick="prevSlide(this)">‹</button>
+                <div class="carousel-track">
+                  <img src="imgs/TEMPO1.png" onclick="openImage(this)">
+                  <img src="imgs/TEMPO2.png" onclick="openImage(this)">
+                  <img src="imgs/TEMPO3.png" onclick="openImage(this)">
+                  <img src="imgs/TEMPO4.png" onclick="openImage(this)">
+                  <img src="imgs/TEMPO5.png" onclick="openImage(this)">
+                </div>
+                <button class="carousel-btn right" onclick="nextSlide(this)">›</button>
+              </div>
+      
+              <p class="project-summary">
+                Relatório automatizado para análise de pausas operacionais,
+                identificando gargalos e impactos em produtividade.
+              </p>
+      
+              <button class="details-btn"
+                onclick="openProjectDetails('pausas')">
+                Ver detalhes →
+              </button>
+            </div>
+                  <!-- ================= PAUSAS OPERACIONAL ================= -->
+                  <div class="project-card">
+                    <h3>Dashboard Vendas</h3>
+            
+                    <div class="carousel">
+                      <button class="carousel-btn left" onclick="prevSlide(this)">‹</button>
+                      <div class="carousel-track">
+                        <img src="imgs/vendas.png" onclick="openImage(this)">
+
+                      </div>
+                      <button class="carousel-btn right" onclick="nextSlide(this)">›</button>
+                    </div>
+            
+                    <p class="project-summary">
+                        Relatório desenvolvido para facilitar a análise de lucros, vendas e ticket médio de venda da empresa
+                    </p>
+            
+                    <button class="details-btn"
+                      onclick="openProjectDetails('vendas')">
+                      Ver detalhes →
+                    </button>
+                  </div>
+                  <div class="project-card">
+                    <h3>Previsão Desmatamento </h3>
+            
+                    <div class="carousel">
+                      <button class="carousel-btn left" onclick="prevSlide(this)">‹</button>
+                      <div class="carousel-track">
+                        <img src="imgs/desmatamento.png" onclick="openImage(this)">
+
+                      </div>
+                      <button class="carousel-btn right" onclick="nextSlide(this)">›</button>
+                    </div>
+            
+                    <p class="project-summary">
+                        Prever o desmatamento de 2025 com base nos dados de desmatamento entre 2019 e 2023
+                    </p>
+            
+                    <button class="details-btn"
+                      onclick="openProjectDetails('desmatamento')">
+                      Ver detalhes →
+                    </button>
+                  </div>
+                  <div class="project-card">
+                    <h3>Script aplicativo de Musica estilo Spotfy com api do Youtube para servidor Fivem </h3>
+            
+                    <div class="carousel">
+                      <button class="carousel-btn left" onclick="prevSlide(this)">‹</button>
+                      <div class="carousel-track">
+                        <img src="imgs/spot1.png" onclick="openImage(this)">
+                        <img src="imgs/spot2.png" onclick="openImage(this)">
+
+                      </div>
+                      <button class="carousel-btn right" onclick="nextSlide(this)">›</button>
+                    </div>
+            
+                    <p class="project-summary">
+                        Vinculo de Api do Youtube, verificação de compra, prazo, verificação de valor disponivel, prazo expirado, onde pode tocar carro/caixa de musica, playlist, som otimizado com perto e longa proximidade 
+                    </p>
+            
+                    <button class="details-btn"
+                      onclick="openProjectDetails('Spotfy')">
+                      Ver detalhes →
+                    </button>
+                  </div>
+                  <div class="project-card">
+                    <h3>Script de loja para servidor Fivem QBOX</h3>
+            
+                    <div class="carousel">
+                      <button class="carousel-btn left" onclick="prevSlide(this)">‹</button>
+                      <div class="carousel-track">
+                        <img src="imgs/loja1.png" onclick="openImage(this)">
+                        <img src="imgs/loja2.png" onclick="openImage(this)">
+
+                      </div>
+                      <button class="carousel-btn right" onclick="nextSlide(this)">›</button>
+                    </div>
+            
+                    <p class="project-summary">
+                        Loja virtual dentro do servidor fivem base qbox, com monitoramente de vendas vinculados via Weebhook, vendas de itens em pix e cartao vinculado com o mercado pago e direcionamento e distribuição dos itens dentro do servidor
+                    </p>
+            
+                    <button class="details-btn"
+                      onclick="openProjectDetails('loja')">
+                      Ver detalhes →
+                    </button>
+                  </div>
+                  <div class="project-card">
+                    <h3>Sistema de caixa com VBA</h3>
+            
+                    <div class="carousel">
+                      <button class="carousel-btn left" onclick="prevSlide(this)">‹</button>
+                      <div class="carousel-track">
+                        <img src="imgs/caixa1.png" onclick="openImage(this)">
+                        <img src="imgs/caixa2.png" onclick="openImage(this)">
+                        <img src="imgs/caixa3.png" onclick="openImage(this)">
+                        
+
+
+                      </div>
+                      <button class="carousel-btn right" onclick="nextSlide(this)">›</button>
+                    </div>
+            
+                    <p class="project-summary">
+                        Sistema de Caixa, com adição de Produtos, carrinho e venda final, o historico 100% em banco de dados para acompanhamento das vendas e acerto em débito de folha 
+                    </p>
+            
+                    <button class="details-btn"
+                      onclick="openProjectDetails('caixa')">
+                      Ver detalhes →
+                    </button>
+                  </div>
+                  <div class="project-card">
+                    <h3>Landing-Page para Atleta</h3>
+            
+                    <div class="carousel">
+                      <button class="carousel-btn left" onclick="prevSlide(this)">‹</button>
+                      <div class="carousel-track">
+                        <img src="imgs/j1.png" onclick="openImage(this)">
+                        <img src="imgs/j2.png" onclick="openImage(this)">
+                        <img src="imgs/j3.png" onclick="openImage(this)">
+                        <img src="imgs/j4.png" onclick="openImage(this)">
+                        <img src="imgs/j5.png" onclick="openImage(this)">
+                        <img src="imgs/j6.png" onclick="openImage(this)">
+                        <img src="imgs/j7.png" onclick="openImage(this)">
+                        
+
+
+                      </div>
+                      <button class="carousel-btn right" onclick="nextSlide(this)">›</button>
+                    </div>
+            
+                    <p class="project-summary">
+                    Landing-Page para trazer atletas novos e parcerias 
+                    </p>
+            
+                    <button class="details-btn"
+                      onclick="openProjectDetails('joao')">
+                      Ver detalhes →
+                    </button>
+                  </div>
+            <!-- ================= GERENCIAL D-7 ================= -->
+            <div class="project-card">
+              <h3>Relatório Gerencial D-7 (KONECTA)</h3>
+      
+              <div class="carousel">
+                <button class="carousel-btn left" onclick="prevSlide(this)">‹</button>
+                <div class="carousel-track">
+                  <img src="imgs/GER1.png" onclick="openImage(this)">
+                  <img src="imgs/GER2.png" onclick="openImage(this)">
+                  <img src="imgs/GER3.png" onclick="openImage(this)">
+                  <img src="imgs/GER4.png" onclick="openImage(this)">
+                </div>
+                <button class="carousel-btn right" onclick="nextSlide(this)">›</button>
+              </div>
+      
+              <p class="project-summary">
+                Relatório estratégico semanal (D-7) voltado à gestão Inbound,
+                com visão consolidada por equipe e gerência.
+              </p>
+      
+              <button class="details-btn"
+                onclick="openProjectDetails('gerencial')">
+                Ver detalhes →
+              </button>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+      <h1>Contato</h1>
+
+      <div class="contact-wrapper">
+        <h1 class="contact-title">Contato</h1>
+      
+        <p class="contact-subtitle">
+          Vamos conversar? Estou disponível para projetos, parcerias e oportunidades.
+        </p>
+      
+        <div class="contact-grid">
+      
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/alessandro-christos-884771268"
+             target="_blank"
+             class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <span>LinkedIn</span>
+              <small>https://www.linkedin.com/in/alessandro-christos-884771268/</small>
+            </div>
+          </a>
+      
+          <!-- Email -->
+          <a href="alessandrochristossimonis1@gmail.com"
+             class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <span>Email</span>
+              <small>alessandrochristossimonis1@gmail.com</small>
+            </div>
+          </a>
+      
+          <!-- Telefone -->
+          <a href="tel:+55997032907"
+             class="contact-card">
+            <i class="fas fa-phone"></i>
+            <div>
+              <span>Telefone</span>
+              <small>+55 (11) 99703-2907</small>
+            </div>
+          </a>
+      
+        </div>
+      </div>
+      
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
